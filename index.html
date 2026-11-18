@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dra. Luciana Ramiro | Consulta de Nutrologia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF6F0;--ink:#26332D;--mut:#3B4A43;--g:#2F5D4B;--b1:#3F7360;--b2:#2F5D4B;--c1:#fff;--c2:#F6EEE6;--alt:#fff;--soft:#E4EEE7;--dk:#2F5D4B;--dkt:#E6EFE8;--gold:#8A6A2F;--ph:#F3E3BF;--pht:#5A4210;--chk:#DCE8DF;--foot:#1F4437;--hA:#fff;--hB:#F4E9DD;--hC:#EBDCCB;--p1:#F8EFE4;--p2:#BFD6C6;--sh:#5b3f2a18;--ltb:#FBF6F0;--ltt:#2F5D4B;--lf:#7FA68E;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101A16;--ink:#E8EFEA;--mut:#C3D1C8;--g:#9CC9B0;--b1:#4C8A72;--b2:#356B56;--c1:#1A2A23;--c2:#15231D;--alt:#0C1411;--soft:#1B2E26;--dk:#1D3A2E;--dkt:#D5E4DA;--gold:#D9B972;--ph:#4A3A14;--pht:#F3E3BF;--chk:#2A4538;--foot:#0A100D;--hA:#1D3228;--hB:#16251E;--hC:#101A16;--p1:#223A2F;--p2:#2F5744;--sh:#00000050;--ltb:#E8EFEA;--ltt:#1D3A2E;--lf:#4C8A72;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101A16;--ink:#E8EFEA;--mut:#C3D1C8;--g:#9CC9B0;--b1:#4C8A72;--b2:#356B56;--c1:#1A2A23;--c2:#15231D;--alt:#0C1411;--soft:#1B2E26;--dk:#1D3A2E;--dkt:#D5E4DA;--gold:#D9B972;--ph:#4A3A14;--pht:#F3E3BF;--chk:#2A4538;--foot:#0A100D;--hA:#1D3228;--hB:#16251E;--hC:#101A16;--p1:#223A2F;--p2:#2F5744;--sh:#00000050;--ltb:#E8EFEA;--ltt:#1D3A2E;--lf:#4C8A72;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;font-family:Lato,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+.s{padding:clamp(48px,7vw,96px) clamp(20px,5vw,48px)}
+.w{max-width:1120px;margin:0 auto}
+.row{display:flex;flex-wrap:wrap;gap:48px;align-items:center}
+.col{flex:1 1 380px}
+h1,h2,h3,.sf{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--g);margin:0;line-height:1.08}
+h1{font-size:clamp(40px,6vw,80px);margin:18px 0 22px}
+h2{font-size:clamp(30px,4.4vw,54px);margin-bottom:18px}
+h3{font-size:28px;margin-bottom:10px}
+p{line-height:1.65;margin:0 0 16px}
+.lead{font-size:clamp(17px,2vw,21px);color:var(--mut)}
+.eb{font-weight:700;letter-spacing:.14em;font-size:13px;text-transform:uppercase;color:var(--g);margin:0}
+.btn{display:inline-block;padding:18px 34px;border-radius:999px;background:linear-gradient(180deg,var(--b1),var(--b2));color:#fff;font-weight:700;letter-spacing:.06em;font-size:15px;text-decoration:none;box-shadow:0 12px 26px var(--sh)}
+.btn:hover{filter:brightness(1.1)}
+.lt{background:var(--ltb);color:var(--ltt);box-shadow:none}
+.mc{font-size:14px;color:var(--mut)}
+.ct{text-align:center}
+.card{background:linear-gradient(160deg,var(--c1),var(--c2));border-radius:28px;box-shadow:0 18px 50px var(--sh);padding:32px}
+.g{display:grid;gap:24px;margin-top:36px;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr))}
+.ph{background:var(--ph);padding:0 5px;border-radius:4px;color:var(--pht)}
+.n{font-family:'Cormorant Garamond',Georgia,serif;font-size:60px;color:var(--gold);line-height:1;display:block;margin-bottom:8px}
+.ck{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.ck li{position:relative;padding-left:42px;line-height:1.55}
+.ck li:before{content:"";position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;background:var(--chk)}
+.ck li:after{content:"";position:absolute;left:9px;top:4px;width:6px;height:12px;border:solid var(--g);border-width:0 2px 2px 0;transform:rotate(42deg)}
+.dk{background:var(--dk);color:var(--dkt)}
+.dk h2{color:#fff}
+.dk .lead,.dk .mc{color:var(--dkt)}
+.hero{background:radial-gradient(70% 90% at 78% 30%,var(--hA),var(--hB) 55%,var(--hC));border-radius:0 0 56px 56px;position:relative;overflow:hidden}
+.pi{flex:1 1 320px;max-width:460px;aspect-ratio:4/5;width:100%;border-radius:230px 230px 32px 32px;background:linear-gradient(170deg,var(--p1),var(--p2));display:flex;align-items:flex-end;justify-content:center;padding:28px;text-align:center;box-shadow:0 30px 70px var(--sh);position:relative}
+.lf{position:absolute;opacity:.6;fill:var(--lf)}
+.pills{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:-34px;position:relative;padding:0 20px}
+.pill{background:var(--c1);border-radius:999px;padding:16px 26px;font-weight:700;color:var(--g);box-shadow:0 12px 30px var(--sh);text-align:center}
+details{background:var(--c1);border-radius:20px;padding:22px 26px;box-shadow:0 8px 26px var(--sh);margin-bottom:14px}
+summary{cursor:pointer;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:25px;color:var(--g)}
+details p{margin:14px 0 0}
+.ft{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 8%;border-radius:inherit}
+.hero .pi .ph{position:relative;padding:6px 18px;border-radius:999px;font-weight:700}
+.bar{display:none}
+@media(max-width:760px){
+body{padding-bottom:84px}
+.row{gap:28px}
+.hero{border-radius:0 0 36px 36px}
+.hero .pi{order:-1;max-width:260px;margin:0 auto}
+.hero .col{text-align:center}
+.btn{display:block;text-align:center;padding:18px 20px}
+.pills{flex-direction:column;margin-top:-22px}
+.pill{padding:14px 20px}
+.card{padding:24px;border-radius:22px}
+h3{font-size:24px}
+.n{font-size:48px}
+summary{font-size:21px}
+details{padding:18px}
+.dk{border-radius:32px!important}
+.bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:5;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:var(--bg);box-shadow:0 -8px 24px var(--sh)}
+}
+</style>
+</head>
+<body>
+<header class="s hero"><div class="w row">
+<svg class="lf" style="left:-30px;top:30px" width="130" height="130" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 92C8 40 44 10 94 6 92 56 60 92 8 92Z"/></svg>
+<div class="col" style="position:relative">
+<p class="eb">Dra. Luciana Ramiro · Cardiologia e Nutrologia</p>
+<h1>Saúde, nutrição e equilíbrio para a sua melhor versão.</h1>
+<p class="lead">Consulta de nutrologia com uma médica cardiologista: avaliação completa do seu corpo, orientação personalizada e acompanhamento de verdade. Presencial ou online.</p>
+<p style="margin-top:28px"><a class="btn" data-w href="#">QUERO AGENDAR MINHA CONSULTA</a></p>
+<p class="mc">Atendimento humanizado e individualizado. Você será atendida no WhatsApp.</p>
+</div>
+<div class="pi">
+<img class="ft" src="foto-dra.jpg" alt="Dra. Luciana Ramiro, médica cardiologista e nutróloga" width="1254" height="1151">
+<span class="ph">Dra. Luciana</span>
+</div>
+</div></header>
+<div class="pills">
+<div class="pill">Médica cardiologista e nutróloga</div>
+<div class="pill">Presencial e online</div>
+<div class="pill">Cuidado completo para sua saúde e bem-estar</div>
+</div>
+
+<section class="s"><div class="w row">
+<div class="col">
+<h2>Você já tentou de tudo e ainda não sabe o que seu corpo realmente precisa?</h2>
+<p class="lead">Dietas genéricas, receitas da internet, conselhos que funcionam para todo mundo menos para você. Quando a orientação não parte do seu corpo, do seu histórico e da sua rotina, é fácil se sentir perdida.</p>
+<p class="sf" style="font-size:30px;font-style:italic;margin-top:24px">A consulta de nutrologia começa pelo que é seu: o seu corpo, a sua história, o seu momento.</p>
+</div>
+<div class="col card">
+<ul class="ck">
+<li>Você quer entender sua composição corporal, não só o número da balança.</li>
+<li>Convive com diabetes, hipertensão, anemia ou outra condição e quer um olhar médico sobre a alimentação.</li>
+<li>Está preocupada com a saúde de um pai, uma mãe ou um familiar idoso.</li>
+<li>Quer cuidar da saúde sem perder tempo em deslocamentos.</li>
+</ul>
+</div>
+</div></section>
+
+<section class="s dk ct" style="border-radius:48px"><div class="w" style="max-width:820px">
+<h2>Nutrologia: o olhar médico sobre a sua alimentação e a sua saúde</h2>
+<p class="lead">A nutrologia é a especialidade médica que cuida da relação entre nutrição e saúde. Na consulta com a Dra. Luciana Ramiro, que também é cardiologista, você recebe uma avaliação que enxerga o corpo como um todo: coração, metabolismo, composição corporal e hábitos.</p>
+<p style="margin-top:28px"><a class="btn lt" data-w href="#">QUERO CUIDAR DA MINHA SAÚDE</a></p>
+</div></section>
+
+<section class="s"><div class="w">
+<h2 class="ct">Seis cuidados em uma só consulta</h2>
+<div class="g">
+<div class="card"><span class="n">01</span><h3>Avaliação completa</h3><p>Avaliação médica do seu estado de saúde e da sua composição corporal, para entender de onde partir.</p></div>
+<div class="card"><span class="n">02</span><h3>Bioimpedância</h3><p>Análise do percentual de gordura, da hidratação e da quantidade de músculo. Informação clara para acompanhar sua evolução.</p></div>
+<div class="card"><span class="n">03</span><h3>Avaliação de risco de sarcopenia</h3><p>Para pessoas idosas, avaliamos o índice de risco de sarcopenia, a perda de massa muscular que afeta força e autonomia.</p></div>
+<div class="card"><span class="n">04</span><h3>Tratamento de diversas condições</h3><p>Distúrbios alimentares, diabetes, hipertensão arterial, doenças cardíacas, anemias, doenças intestinais e obesidade.</p></div>
+<div class="card"><span class="n">05</span><h3>Orientação personalizada</h3><p>Orientação alimentar e reposição de nutrientes, quando necessário, pensada para você e não para a média.</p></div>
+<div class="card"><span class="n">06</span><h3>Acompanhamento integrado</h3><p>Encaminhamento para nutricionista e psicólogo, quando indicado pela médica, para um cuidado que não deixa lacunas.</p></div>
+</div>
+<p class="ct" style="margin-top:40px"><a class="btn" data-w href="#">AGENDAR MINHA AVALIAÇÃO</a></p>
+</div></section>
+
+<section class="s" style="background:var(--alt)"><div class="w row">
+<div class="col"><h2>Essa consulta é para você que:</h2></div>
+<div class="col" style="flex-basis:520px">
+<ul class="ck">
+<li>Quer entender a própria composição corporal com exames e dados, não com achismo.</li>
+<li>Tem diabetes, hipertensão, doença cardíaca, anemia ou doença intestinal e busca orientação alimentar com segurança médica.</li>
+<li>Convive com obesidade ou com distúrbios alimentares e precisa de um acompanhamento sem julgamentos.</li>
+<li>Quer avaliar a saúde muscular de um familiar idoso.</li>
+<li>Prefere ser atendida por uma médica que olha o quadro inteiro, não só um número.</li>
+</ul>
+</div>
+</div></section>
+
+<section class="s"><div class="w card row" style="background:var(--soft);padding:clamp(24px,5vw,56px)">
+<div class="col">
+<h2>Consulta online</h2>
+<p class="lead">Mais praticidade e conforto para cuidar da sua saúde de onde você estiver. Sem trânsito, sem sala de espera, com o mesmo atendimento humanizado e individualizado.</p>
+<p>Prefere presencial? Atendemos também no consultório em <span class="ph">[cidade/endereço]</span>.</p>
+</div>
+<div style="flex:0 1 auto"><a class="btn" data-w="Olá, vim pela página e quero agendar uma consulta online de nutrologia." href="#">AGENDAR CONSULTA ONLINE</a></div>
+</div></section>
+
+<section class="s" style="padding-top:0"><div class="w row">
+<div class="pi" style="border-radius:32px 32px 230px 230px"><span class="ph">Foto da Dra. Luciana: retrato de consultório</span></div>
+<div class="col">
+<h2>Conheça a Dra. Luciana Ramiro</h2>
+<p class="lead">Médica cardiologista e nutróloga, a Dra. Luciana une dois olhares que se completam: o cuidado com o coração e o cuidado com a nutrição. Seu atendimento é humanizado, individualizado e sem pressa, porque cada paciente chega com uma história diferente.</p>
+<p><span class="ph">[Inserir formação, CRM/RQE e 1 ou 2 diferenciais reais: tempo de experiência, instituições, sociedades médicas.]</span></p>
+</div>
+</div></section>
+
+<section class="s" style="background:var(--alt)"><div class="w">
+<h2 class="ct">Do primeiro contato ao acompanhamento, em 3 passos</h2>
+<div class="g">
+<div class="card"><span class="n">1</span><h3>Você chama no WhatsApp.</h3><p>Nossa equipe responde, tira suas dúvidas e encontra o melhor horário.</p></div>
+<div class="card"><span class="n">2</span><h3>Você faz a consulta.</h3><p>Presencial ou online, com avaliação completa e bioimpedância quando indicada.</p></div>
+<div class="card"><span class="n">3</span><h3>Você recebe seu plano.</h3><p>Orientação personalizada e, se necessário, encaminhamento para nutricionista ou psicólogo.</p></div>
+</div>
+<p class="ct" style="margin-top:40px"><a class="btn" data-w href="#">QUERO DAR O PRIMEIRO PASSO</a></p>
+</div></section>
+
+<section class="s"><div class="w" style="max-width:860px">
+<h2 class="ct">Tire suas dúvidas</h2>
+<div style="margin-top:32px">
+<details open><summary>Qual a diferença entre nutrólogo e nutricionista?</summary><p>O nutrólogo é médico: avalia o estado de saúde, trata doenças relacionadas à nutrição e pode pedir exames e orientar reposição de nutrientes. O nutricionista não é médico e atua principalmente no planejamento alimentar. Quando indicado, a Dra. Luciana encaminha para um nutricionista, e os dois cuidados se somam.</p></details>
+<details><summary>O que é bioimpedância?</summary><p>É um exame que analisa o percentual de gordura, a hidratação e a quantidade de músculo do corpo. Ajuda a entender sua composição corporal além do peso.</p></details>
+<details><summary>A consulta online é tão completa quanto a presencial?</summary><p>A consulta online oferece o mesmo atendimento humanizado e individualizado. Alguns procedimentos, como a bioimpedância, dependem da avaliação presencial. A Dra. orienta o melhor formato para o seu caso.</p></details>
+<details><summary>A Dra. trata pessoas com doenças como diabetes e hipertensão?</summary><p>Sim. A consulta cobre condições como diabetes, hipertensão arterial, doenças cardíacas, anemias, doenças intestinais, distúrbios alimentares e obesidade.</p></details>
+<details><summary>Para idosos, o que é avaliado?</summary><p>Avaliamos o índice de risco de sarcopenia, a perda de massa muscular associada ao envelhecimento.</p></details>
+<details><summary>Como e onde agendo?</summary><p>Pelo botão desta página, direto no WhatsApp. O atendimento é presencial em <span class="ph">[cidade]</span> e online para todo o Brasil. <span class="ph">[Confirmar]</span></p></details>
+<details><summary>Aceita convênio?</summary><p><span class="ph">[Preencher: particular / reembolso / convênios aceitos.]</span></p></details>
+</div>
+</div></section>
+
+<section class="s dk ct" style="border-radius:48px 48px 0 0"><div class="w" style="max-width:760px">
+<h2>Sua saúde merece um olhar completo.</h2>
+<p class="lead">Agende sua consulta de nutrologia com a Dra. Luciana Ramiro e comece a cuidar de você com orientação médica, individualizada e humana.</p>
+<p style="margin:28px 0"><a class="btn lt" data-w href="#">FALAR NO WHATSAPP E AGENDAR</a></p>
+<p class="mc">Presencial e online | Cuidado completo para sua saúde e bem-estar</p>
+</div></section>
+
+<footer class="s ct" style="background:var(--foot);color:#CFE0D4;padding-block:36px;font-size:14px">
+<p style="margin-bottom:6px">Dra. Luciana Ramiro | Cardiologista e Nutróloga | CRM <span class="ph">[__]</span> RQE <span class="ph">[__]</span></p>
+<p style="margin-bottom:6px"><span class="ph">[Endereço]</span> | <span class="ph">[Telefone/WhatsApp]</span> | <span class="ph">[Instagram]</span></p>
+<p style="margin:0">Este conteúdo é informativo e não substitui consulta médica. Os resultados variam de pessoa para pessoa.</p>
+</footer>
+<div class="bar"><a class="btn" data-w href="#">AGENDAR PELO WHATSAPP</a></div>
+<script>
+var NUM='';
+document.querySelectorAll('[data-w]').forEach(function(a){var t=a.getAttribute('data-w')||'Olá, vim pela página e quero agendar uma consulta de nutrologia.';a.href='https://wa.me/'+NUM+'?text='+encodeURIComponent(t);a.target='_blank';a.rel='noopener'});
+</script>
+</body>
+</html>
